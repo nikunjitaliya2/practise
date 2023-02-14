@@ -1,0 +1,65 @@
+
+<!--basic pipes-->
+<!--<h1>{{title | uppercase}}</h1>-->
+<!--<h1>{{toUp(title)}}</h1>-->
+<!--<h1>{{title | slice : 0 : 9 | uppercase}}</h1>-->
+
+<!--Learning About Two binding , -->
+
+<!--<h1>{{today}}</h1>-->
+<!--two way binding-->
+<!--<input type="text" [(ngModel)]="name">-->
+<!--<h2>{{name}}</h2>-->
+
+<!--<h2>{{userData | json | uppercase}}</h2>-->
+<!--<p>{{1000.2000 | number : '2.2-3'}}</p>-->
+<!--<p>{{"hello how are you" | titlecase}}</p>-->
+
+<!--custom pipe-->
+<br>  <br>
+<input type="number" placeholder="enter amount" #amount>
+<br>  <br>
+<button (click)="getNumber(amount.valueAsNumber)">dollar to rupees</button>
+<button (click)="getNumber1(amount.valueAsNumber)">ruppes to dollar</button>
+
+
+<h2>Indian rupees prise:- {{dollrr | usdInr: "INR"}}</h2>
+<h2>Indian rupees prise:- {{ruppss | usdInr: "DLR"}}</h2>
+
+
+
+
+
+
+
+
+
+
+<!--reusable component-->
+<!--<ul *ngFor="let user of userData">-->
+<!--<app-child [item]="user"></app-child>-->
+<!--</ul>-->
+
+<!--<app-child></app-child>-->
+<!--<br><br>-->
+<!--<input type="text" placeholder="enter name" #inputField1 > <br>-->
+<!--<app-child  [item4]="show"></app-child><button (click)="getData(inputField1.value)" [value]="show">  getData</button>-->
+<!--<button (click)="logAp(inputField1.value)">log</button>-->
+<!--<ul *ngFor="let item of show">-->
+<!--  <li>No.{{item}}</li>-->
+<!--</ul>-->
+<!--<button (click)="changeData()">change</button>-->
+<!--<app-child [item] = "data"></app-child>-->
+
+<!--<ul *ngFor="let item of userDetails">-->
+<!--  <li>{{item.name}}</li>-->
+<!--</ul>-->
+<!--<input type="file" placeholder="select" id="dd">-->
+<!--<button (click)="getValue()">click</button>-->
+<!--<input type="text" #text placeholder="Enter Some Text">-->
+
+<!--<button (click)="addTodo(text.value)">Add to list</button>-->
+
+<!--<ul *ngFor="let item of list">-->
+<!--  <li>No.{{item.id}} Name : {{item.name}} <button (click)="removeLine(item.id)">Remove</button></li>-->
+<!--</ul>-->
